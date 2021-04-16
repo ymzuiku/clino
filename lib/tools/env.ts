@@ -1,7 +1,3 @@
-interface ENV {
-  mongo_url: string;
-}
-
 import path from "path";
 
 let _env = {} as any;
@@ -12,4 +8,5 @@ try {
   _env = require(env_path);
 } catch (err) {}
 
-export const env: ENV = _env;
+// 获取 static/env.js 的对象
+export const env = _env;

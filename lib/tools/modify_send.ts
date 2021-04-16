@@ -1,3 +1,5 @@
+// 控制 fastily 返回对象，捕获错误，并且转化为三段式:
+// {code:number, msg:string, data?:any}
 export const modify_send = async (
   fn: Function,
   modifyError?: (err: string) => string
@@ -29,10 +31,10 @@ export const modify_send = async (
         const data = JSON.parse(str);
         return { code: 200, ...data };
       } catch (err) {
-        return { code: 500, err: "错误对象 [json] 转化失败" };
+        return { code: 500, msg: "错误对象 [json] 转化失败" };
       }
     }
 
-    return { code: 400, err: err };
+    return { code: 400, msg: err };
   }
 };
