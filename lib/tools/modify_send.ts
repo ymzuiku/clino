@@ -1,4 +1,4 @@
-export const resbody = async (
+export const modify_send = async (
   fn: Function,
   modifyError?: (err: string) => string
 ) => {

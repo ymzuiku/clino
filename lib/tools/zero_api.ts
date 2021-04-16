@@ -1,9 +1,9 @@
 import { app } from "./app";
-import { resbody } from "./resbody";
+import { modify_send } from "./modify_send";
 
 export const zero_api = (url: string, fn: Function) => {
   app.post(url, (req, rep) => {
-    return resbody(async () => {
+    return modify_send(async () => {
       return Promise.resolve(fn(req.body));
     });
   });
