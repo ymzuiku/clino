@@ -1,13 +1,13 @@
 {
   "name": "clino",
-  "version": "0.1.0",
-  "main": "index.js",
+  "version": "0.1.1",
+  "main": "./lib/index.js",
   "description": "nodejs server tools",
   "license": "MIT",
   "exports": {
-    "import": "./server/index.ts"
+    "import": "./lib/index.ts"
   },
-  "dependencies": {
+  "devDependencies": {
     "@types/fs-extra": "^9.0.8",
     "@types/mongodb": "^3.6.12",
     "fastify": "^3.14.2",
