@@ -15,7 +15,7 @@ clino 和 clino-client 提供了 zero_api, 前后端配合使用可以像调用�
 ### 1.服务端创建 zero api
 
 ```ts
-load_zero_apis("/v1", {
+zeroApi("/v1", {
   hello_world: async ({ name, age }) => {
     return { code: 200, msg: "ok", data: { hello: "world" } };
   },
@@ -37,7 +37,7 @@ type APIs = typeof apis;
 export { APIs };
 ```
 
-### 3.客户端使用 zero_api
+### 3.客户端使用 zeroApi
 
 客户端安装 clino-client:
 
@@ -49,9 +49,9 @@ npm i --save clino-client
 
 ```ts
 import { APIs } from "you-self-/apis";
-import { zero_api_client } from "clino-client";
+import { zeroApiClient } from "clino-client";
 
-const apis = zero_api_client<APIs>("/v1", (err) => {
+const apis = zeroApiClient<APIs>("/v1", (err) => {
   console.log("这里做统一的错误处理", err);
 });
 

@@ -1,6 +1,6 @@
 // 控制 fastily 返回对象，捕获错误，并且转化为三段式:
 // {code:number, msg:string, data?:any}
-export const modify_send = async (
+export const modifySend = async (
   fn: Function,
   modifyError?: (err: string) => string
 ) => {

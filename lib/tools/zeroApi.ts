@@ -1,9 +1,9 @@
 import { app } from "./app";
-import { modify_send } from "./modify_send";
+import { modifySend } from "./modifySend";
 
 const regiest_post = (url: string, fn: Function) => {
   app.post(url, (req, rep) => {
-    return modify_send(() => {
+    return modifySend(() => {
       return Promise.resolve(fn(req.body));
     });
   });
@@ -33,7 +33,7 @@ const regiest_post = (url: string, fn: Function) => {
 
 // 零 api 方案，具体使用请参考 README.md
 // 注册一个单层级对象，转化为若干个 post 路由
-export const load_zero_apis = <T>(preUrl: string, obj: T) => {
+export const zeroApi = <T>(preUrl: string, obj: T) => {
   Object.keys(obj).forEach((k) => {
     regiest_post(preUrl + "/" + k, (obj as any)[k]);
   });
