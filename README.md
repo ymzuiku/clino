@@ -10,6 +10,8 @@ Node 服务往往拆分的很碎，许多重复的代码块在不同的服务中
 
 ## zero_api
 
+clino 和 clino-client 提供了 zero_api, 前后端配合使用可以像调用本地方法一样调用服务端接口
+
 ### 1.服务端创建 zero api:
 
 ```ts
