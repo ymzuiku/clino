@@ -8,7 +8,7 @@ Node 服务往往拆分的很碎，许多重复的代码块在不同的服务中
 
 由于 clino 是代码块，所有依赖都不默认安装，在实际项目中主动安装。
 
-## zero_api
+## zeroApi
 
 clino 和 clino-client 提供了 zero_api, 前后端配合使用可以像调用本地方法一样调用服务端接口
 
