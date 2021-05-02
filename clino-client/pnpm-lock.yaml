@@ -1,0 +1,31 @@
+lockfileVersion: 5.3
+
+specifiers:
+  aoife: ^1.7.6
+  template-css: ^1.5.6
+  vanilla-message: ^1.1.3
+
+devDependencies:
+  aoife: 1.7.8
+  template-css: 1.5.6
+  vanilla-message: 1.1.4
+
+packages:
+
+  /aoife/1.7.8:
+    resolution: {integrity: sha512-N+9Q2ewh4p6nh+mZyY0U9w9mEQEEdY+DDUoTfP2yCWVlSuFqLYzbrWARvrtRfSlI8uifAUSY/FGlCOT+SN6RaQ==}
+    dev: true
+
+  /template-css/1.5.6:
+    resolution: {integrity: sha512-6OGWQsiuvbd+LznwP+hT7D7Zkrsna55s6901d3ABbFixxkMxZpvzObekzidB8z+vXkb3rla2RNEXaOEnhnw5mg==}
+    dependencies:
+      template-fn: 1.0.2
+    dev: true
+
+  /template-fn/1.0.2:
+    resolution: {integrity: sha512-bFMYc+ZCQBdWiDgXc02YT4fi78UmTrBtYS7IhbJ9fMXNVcChdkBENj0it3pQ1qloWlMQXhMORN4LOI6/gdYatw==}
+    dev: true
+
+  /vanilla-message/1.1.4:
+    resolution: {integrity: sha512-GJ/KzEfTaoYv8Mx01yh8YlVlph6Eo19ctya1WMMxBju1snjuhIl1b6wgViBZA6oopK3EG5BPYJmaQBy2hPIldA==}
+    dev: true
